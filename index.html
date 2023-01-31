@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lists your ToDo's here...</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/991f0606bc.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="show-message">
+      <i class="fa-solid fa-triangle-exclamation"></i
+      ><span id="alert-message"></span>
+    </div>
+
+    <div class="main">
+      <h1>My To-Do List...</h1>
+
+      <!-- ============================ADD TASKS============================================= -->
+      <div class="add-task">
+        <input
+          type="text"
+          placeholder="Task Name"
+          value=""
+          id="task-name"
+          required
+        />
+        <button id="add-task-btn" class="btn">Add Task</button>
+        <button id="remove-task" class="btn">Remove All Tasks</button>
+      </div>
+    </div>
+
+    <!-- ============================EDIT TASKS========================================================= -->
+
+    <div class="edit-task" id="task-box">
+      <input
+        type="text"
+        placeholder="Task Name"
+        value=""
+        id="edit-task-name"
+        required
+      />
+      <button id="save-task-btn" class="btn">Save</button>
+    </div>
+
+    <!-- show tasks -->
+    <div class="show-tasks">
+      <ul id="task-item"></ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
